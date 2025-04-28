@@ -1,6 +1,6 @@
 package hilos.clase;
 
-public class ProcesoD extends Thread{
+public class ProcesoD implements Runnable{
     private int n;
 
     public ProcesoD(int n) {

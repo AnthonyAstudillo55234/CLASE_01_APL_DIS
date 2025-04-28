@@ -15,6 +15,11 @@ public class ProcesoA extends Thread{
 
     @Override
     public void run() {
-        contar(n);
+        try{
+            sleep(1000);
+            contar(n);
+        }catch (InterruptedException e){
+            throw new RuntimeException(e);
+        }
     }
 }
